@@ -1,23 +1,31 @@
+.main {
+  overflow: hidden;
+}
 .header {
+  margin: 0 auto;
   min-height: 70px;
   position: fixed;
+  display: flex;
+  align-items: center;
   top: 0;
-  left: 0;
-  width: 100%;
-  background: #f4f9e2;
-}
-
-.wrapper {
-  max-width: 1130px;
-  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1440px;
+  /* background: #f4f9e2; */
+  justify-content: space-between;
+  z-index: 100;
 }
 
 .header__wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  max-width: 1440px;
   margin-top: 27px;
-
-  justify-content: space-between;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
+  padding-bottom: 27px;
 }
 
 .logo {
@@ -80,9 +88,14 @@
 }
 
 .header__link:hover,
-.header__link:active,
-.header__link:focus {
+.header__link:active {
   opacity: 0.75;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.header__link:focus {
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
 }
@@ -131,13 +144,28 @@
 .button__link:active {
   transform: scale(0.98);
 }
-
+.main {
+  width: 1440px;
+  margin: 0 auto;
+}
 /* INTRO*/
 
 .intro {
-  padding-top: 241px;
+  max-width: 1440px;
+  min-height: 445px;
+  position: relative;
+}
+
+.wrapper {
+  padding-top: 240px;
+  padding-right: 120px;
+  max-width: 840px;
+  padding-left: 157px;
+  margin-right: 320px;
+  padding-bottom: 75px;
   background-color: #f4f9e2;
 }
+
 .wrapper__intro {
   max-width: 484px;
   min-height: 465px;
@@ -208,4 +236,53 @@
 
 .button-content__link:active {
   transform: scale(0.98);
+}
+.intro-pic {
+  position: absolute;
+  width: 650px;
+  height: 680px;
+  right: 12px;
+  top: -101px;
+  object-fit: cover;
+  transform: scale(1, -1);
+  /* transform: scale(1, -1);
+  rotate: 150deg; */
+  rotate: 150deg;
+
+  background: url(/images/intro.jpg) no-repeat;
+  z-index: -1;
+}
+
+.oval {
+  position: absolute;
+  width: 807.71px;
+  height: 544.93px;
+  right: -128px;
+  top: 48px;
+  background: #edfdff;
+  border-radius: 312.159px;
+
+  transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+  z-index: 1;
+}
+
+.oval-opacity {
+  position: absolute;
+  width: 807.71px;
+  height: 544.93px;
+  /* right: -115px;
+  top: 115px; */
+  right: -160px;
+  top: 105px;
+  overflow: hidden;
+  z-index: 3;
+
+  background: linear-gradient(
+      213.71deg,
+      #ffffff 11.23%,
+      rgba(255, 255, 255, 0) 48.4%
+    ),
+    url(linkedin-sales-navigator-406825.jpg);
+  border-radius: 312.159px;
+  transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
 }
