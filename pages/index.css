@@ -348,3 +348,138 @@
   left: 915px;
   top: 0;
 }
+
+/* ABOUT */
+
+.about {
+  max-width: 1437px;
+  min-height: 361px;
+}
+
+.about__wrapper {
+  width: 1437px;
+  height: 361px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.about__title {
+  width: 93px;
+  height: 210px;
+  position: absolute;
+  margin: 0;
+  top: 156px;
+  left: 106px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+
+  color: #22356f;
+}
+
+.about__text {
+  width: 592px;
+  height: 210px;
+  position: absolute;
+  margin: 0;
+  margin: 0 auto;
+  position: absolute;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.005em;
+
+  color: #22356f;
+}
+
+/* HELP */
+
+.help {
+  max-width: 1437px;
+  min-height: 600px;
+}
+
+.help__title {
+  margin: 0;
+  padding-top: 75px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1438px;
+  height: 360px;
+  padding-top: 26px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item__title {
+  width: 232px;
+  height: 100px;
+  margin: 0 auto;
+  margin-left: 54px;
+  padding-left: 25px;
+  display: flex;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  background: url(/images/svg/point.svg) no-repeat;
+  color: #ffffff;
+}
+
+.list__item {
+  width: 360px;
+  height: 360px;
+}
+
+.bg_color_pink {
+  background: #ffe2de;
+}
+
+.bg_color_green {
+  background: #c4e769;
+}
+
+.bg_color_aqua {
+  background: #62d0df;
+}
+
+.bg_color_blue {
+  background: #0052c1;
+}
+
+.underline {
+  width: 255px;
+  height: 72px;
+  box-shadow: inset 0px -1px 0px #ffffff;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
