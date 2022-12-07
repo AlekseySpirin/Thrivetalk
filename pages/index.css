@@ -425,7 +425,7 @@
   color: rgba(34, 53, 111, 0.5);
 }
 
-.list {
+.list__help {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -452,6 +452,8 @@
   line-height: 34px;
   letter-spacing: -0.006em;
   background: url(/images/svg/point.svg) no-repeat;
+  background-position: top 10px left 0px;
+  background-size: 9px;
   color: #ffffff;
 }
 
@@ -482,4 +484,69 @@
   box-shadow: inset 0px -1px 0px #ffffff;
   margin: 0 auto;
   margin-bottom: 23px;
+}
+
+/* HEALTH */
+
+.list__health {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1438px;
+  height: 960px;
+  padding-top: 26px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid_size_lg {
+  width: 480px;
+  height: 480px;
+}
+
+.underline_size_lg {
+  width: 340px;
+  height: 96px;
+
+  box-shadow: inset 0px -1px 0px #ffffff;
+  margin-bottom: 30px;
+}
+
+.bg_color_dark-blue {
+  background: #22356f;
+}
+
+.bg_img_health {
+  background: url(/images/health.jpg);
+}
+
+.bg_color_dark-gray {
+  background: #dee1ff;
+}
+
+.bg_color_purple {
+  background: #8f00ff;
+}
+
+.item__title_position_left {
+  margin-left: 72px;
+  padding-left: 32px;
+  background-position: top 14px left 0px;
+  background-size: 12px;
+}
+
+.item__title_size_sm {
+  width: 157px;
+  height: 72px;
+}
+
+.item__title_size_md {
+  width: 206px;
+  height: 72px;
+}
+
+.item__title_size_lg {
+  width: 232px;
+  height: 54px;
 }
