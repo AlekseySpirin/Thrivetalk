@@ -606,3 +606,58 @@
 
   color: rgba(34, 53, 111, 0.5);
 }
+
+.know {
+  max-width: 1440px;
+  min-height: 800px;
+}
+
+.know__content {
+  background: url(/images/know.jpg) no-repeat;
+  background-size: 480px 800px;
+}
+
+.know__title {
+  margin: 0;
+  padding: 0;
+  width: 217px;
+  height: 20px;
+  padding-bottom: 225px;
+  padding-top: 103px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+  padding-left: 589px;
+  color: #22356f;
+}
+
+.know__text {
+  margin: 0;
+  padding: 0;
+  width: 676px;
+  height: 215px;
+  padding-bottom: 152px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+  padding-left: 589px;
+  color: #22356f;
+  position: relative;
+}
+
+.button-content_place_know {
+  margin: 0;
+  padding-left: 589px;
+  transform: translate(-20px, 0);
+  padding-bottom: 42px;
+}
+
+.know__text_color_aqua {
+  color: #6cd3e1;
+}
