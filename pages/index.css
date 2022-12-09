@@ -108,14 +108,18 @@
   line-height: 16px;
 }
 
-.wrapper__button {
+.button {
   width: 150px;
   height: 50px;
   z-index: 10;
   overflow: hidden;
+
+  transition: 0.2s all;
+}
+
+.button_place_header {
   border-radius: 50px;
   background: #62d0df;
-  transition: 0.2s all;
 }
 
 .button__link {
@@ -138,11 +142,11 @@
 }
 
 .button__link:hover {
-  transform: scale(1.1);
+  opacity: 0.7;
 }
 
 .button__link:active {
-  transform: scale(0.98);
+  transform: scale(0.9);
 }
 .main {
   width: 1440px;
@@ -193,15 +197,17 @@
   font-weight: 400;
   font-size: 25px;
   line-height: 42px;
-
+  padding-bottom: 40px;
   color: #22356f;
 }
 
 .button_form_square {
-  margin-top: 40px;
   margin-right: 40px;
   border-radius: 0;
   background: #f9b640;
+}
+
+.button_form_content {
 }
 
 .button-content {
@@ -210,7 +216,6 @@
   z-index: 10;
   overflow: hidden;
   border-radius: 50px;
-  margin-top: 40px;
 }
 
 .button-content__link {
@@ -223,20 +228,21 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+
   transition: 0.2s all;
   text-decoration: none;
   z-index: 5;
 }
 
 .button-content__link:hover {
-  transform: scale(1.1);
+  opacity: 0.7;
 }
 
 .button-content__link:active {
-  transform: scale(0.98);
+  transform: scale(0.9);
 }
 .intro-pic {
   position: absolute;
@@ -246,8 +252,7 @@
   top: -101px;
   object-fit: cover;
   transform: scale(1, -1);
-  /* transform: scale(1, -1);
-  rotate: 150deg; */
+
   rotate: 150deg;
 
   background: url(/images/intro.jpg) no-repeat;
@@ -330,7 +335,7 @@
   color: #fff;
 }
 
-.inner-text {
+.decreased-text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -610,11 +615,12 @@
 .know {
   max-width: 1440px;
   min-height: 800px;
+  background: url(/images/know.jpg) no-repeat left;
 }
 
-.know__content {
-  background: url(/images/know.jpg) no-repeat;
-  background-size: 480px 800px;
+.know__wrapper {
+  max-width: 580px;
+  padding-left: 590px;
 }
 
 .know__title {
@@ -630,7 +636,7 @@
   font-size: 16px;
   line-height: 12px;
   letter-spacing: 0.06em;
-  padding-left: 589px;
+
   color: #22356f;
 }
 
@@ -646,18 +652,128 @@
   font-size: 36px;
   line-height: 53px;
   letter-spacing: -0.01em;
-  padding-left: 589px;
+
   color: #22356f;
   position: relative;
 }
 
 .button-content_place_know {
-  margin: 0;
-  padding-left: 589px;
-  transform: translate(-20px, 0);
-  padding-bottom: 42px;
 }
 
 .know__text_color_aqua {
   color: #6cd3e1;
+}
+
+/* TEXT */
+
+.title {
+  margin: 0;
+  padding: 0;
+  padding-top: 103px;
+  padding-bottom: 225px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.title_size_sm {
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+}
+
+.title_size_md {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.title_size_lg {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+}
+
+.title_theme_dark {
+  color: #fff;
+}
+
+.subtitle {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.subtitle_size_sm {
+  font-size: 36px;
+  line-height: 27px;
+  letter-spacing: -0.006em;
+}
+
+.subtitle_size_md {
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.035em;
+}
+
+.subtitle_size_lg {
+  font-size: 64px;
+  line-height: 94px;
+  letter-spacing: -0.01em;
+}
+
+.subtitle_theme_dark {
+  color: #fff;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.text_size_sm {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.text_size_md {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.text_size_lg {
+  font-size: 36px;
+  line-height: 53px;
+}
+
+.text_theme_dark {
+  color: #fff;
+}
+
+/* contact-us */
+
+.contact-us {
+  margin: 0;
+  max-width: 1440px;
+  min-height: 800px;
+
+  background: #22356f url(/images/contact-us.jpg) no-repeat right;
+}
+
+.contact-us__wrapper {
+  max-width: 580px;
+  padding-left: 180px;
+}
+
+.button-content__link_color_aqua {
+  color: #62d0df;
+}
+
+.button_place_contact-us {
+  padding-top: 120px;
 }
