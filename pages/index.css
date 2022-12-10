@@ -77,6 +77,7 @@
 
 .header__link {
   box-sizing: border-box;
+
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
@@ -87,18 +88,18 @@
   color: #22356f;
 }
 
-.header__link:hover,
-.header__link:active {
+.header__link:active,
+.header__link:hover {
   opacity: 0.75;
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
   color: #000;
 }
 
-.header__link:focus {
+/* .header__link:focus {
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
-}
+} */
 
 .header_text_bold {
   font-family: "Roboto";
@@ -776,4 +777,97 @@
 
 .button_place_contact-us {
   padding-top: 120px;
+}
+
+/* footer */
+
+.footer {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 460px;
+}
+
+.wrapper-footer {
+  max-width: 1440px;
+  min-height: 380px;
+  background: url(/images/footer.jpg) no-repeat left;
+}
+
+.copyright {
+  max-width: 1440px;
+  min-height: 80px;
+  background: #62d0df;
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  margin: 0;
+  margin-left: 179px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.006em;
+
+  color: #ffffff;
+}
+
+.info {
+  max-width: 870px;
+  min-height: 380px;
+  padding-left: 570px;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.info__cell {
+  display: flex;
+
+  align-content: center;
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+
+.info__title {
+  margin: 0;
+  width: 240px;
+  height: 48px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.006em;
+
+  color: #22356f;
+}
+
+.info__text {
+  margin: 0;
+  margin-right: -25px;
+  width: 200px;
+  height: 115px;
+  padding: 32px 26px 25px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.006em;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.info__text_border_none {
+  border-right: none;
+}
+
+.e-mail {
+  color: #006dff;
 }
